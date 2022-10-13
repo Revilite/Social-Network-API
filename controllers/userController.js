@@ -26,13 +26,6 @@ module.exports = {
       .then((data) => res.json(data))
       .catch((err) => res.status(500).json(err));
   },
-  createFriend(req, res) {
-    User.findOne({ _id: req.params.userId })
-    .then((data) =>{
-      console.log(User);
-      res.json(data);
-    })
-    .catch((err) => res.status(500).json)
-  }
+ 
 
 }
